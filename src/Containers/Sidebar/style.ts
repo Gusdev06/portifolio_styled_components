@@ -16,10 +16,10 @@ export const ParagrafoUser = styled(P)`
 `
 
 export const Botao = styled.button`
-  color: #eee;
+  color: ${(props) => props.theme.CorBotao};
   margin-top: 40px;
   padding: 8px;
-  background-color: #282a35;
+  background-color: ${(props) => props.theme.CorPrincipal};
   font-weight: bold;
   border-radius: 14px;
   border: none;

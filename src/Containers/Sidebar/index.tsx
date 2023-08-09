@@ -5,7 +5,11 @@ import { SideBarStyle } from './style'
 import { ParagrafoUser } from './style'
 import { Botao } from './style'
 
-const SideBar = () => (
+type Props = {
+  trocarTheme: () => void
+}
+
+const SideBar = (props: Props) => (
   <aside>
     <SideBarStyle>
       <Avatar />
@@ -14,7 +18,7 @@ const SideBar = () => (
         Gusdev06
       </ParagrafoUser>
       <Paragrafo fontSize={12}>Engenheiro frontend</Paragrafo>
-      <Botao>Trocar tema</Botao>
+      <Botao onClick={props.trocarTheme}>Trocar tema</Botao>
     </SideBarStyle>
   </aside>
 )

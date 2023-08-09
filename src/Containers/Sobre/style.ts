@@ -4,10 +4,11 @@ export const GithubSecao = styled.div`
   margin-bottom: 64px;
   margin-top: 32px;
   img {
-    height: 157px;
+    heigth: auto;
 
     @media (max-width: 768px) {
       width: 100%;
+      heigth: auto;
     }
   }
 `
